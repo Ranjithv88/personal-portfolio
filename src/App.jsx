@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.scss'
 import NavBar from './components/NavBar'
-import Project from './components/project'
+import Project from './components/Project'
 import Skill from './components/Skill'
 import Education from './components/Education'
 import Footer from './components/Footer'
