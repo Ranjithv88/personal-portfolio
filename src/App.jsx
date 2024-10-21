@@ -8,13 +8,13 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <NavBar />
       <Project />
       <Skill />
       <Education />
       <Footer />
-    </>
+    </div>
   )
 }
 

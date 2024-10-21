@@ -8,6 +8,7 @@ import { CiMail } from "react-icons/ci";
 function Footer() {
   return (
     <footer>
+      <div className='Empty'></div>
       <h1 className='FTitle'>About</h1>
         <div className='FContent'>
           <div className='FOne'>
@@ -16,7 +17,7 @@ function Footer() {
           <h5>CoimBatore,Tamil Nadu,India</h5>
           </div>
           <div className='FTwo'>
-            <h1>Content Us</h1>
+            <h1>CONTACT US</h1>
             <div className='FIcon'>
               <a target='_blank' href="Ranjithkumar22445588@gmail.com"><CiMail/></a>
               <a target='_blank' href="https://github.com/Ranjithv88"><FaGithub/></a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/Skills.scss'
-import Spring from '../assets/Spring-Boot-Logo.png'
+import Spring from '../assets/icons/Spring-Boot-Logo.png'
 
 function Skill() {
   return (

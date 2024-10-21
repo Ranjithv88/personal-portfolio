@@ -2,9 +2,15 @@
 /*--------------------------- Footer Components --------------------*/
 footer{
     width: 100vw;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: white;
     padding: 40px 0px;
+    mask-image: url('../../assets/img/Brush\ Design\ Image.png');
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-position: center center;
+    .Empty{
+        height: 20vh;
+    }
     .FTitle{
         font-size: 40px;
         padding: 20px 100px;
@@ -33,6 +39,7 @@ footer{
             h1{
                 padding: 10px 0px;
                 text-align: end;
+                font-weight: bold;
             }
             .FIcon{
                 overflow: hidden;
@@ -40,7 +47,6 @@ footer{
                 justify-content: end;
                 align-items: center;
                 a{
-                    color: rgb(255, 255, 255);
                     font-size: 30px;
                     padding: 5px;
                 }

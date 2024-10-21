@@ -8,15 +8,26 @@
     row-gap: 20px;
     justify-items: center;
     align-items: center;
+    padding-bottom: 100px;
     .EducationTitle{
         text-align: center;
         font-size: 40px;
         padding: 40px 0px;
     }
     div{
-        width: 80vw;
-        height: 20vh;
+        mask-image: url('../../assets/img/Education\ Design\ Background\ Image.png');
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        width: 90vw;
+        height: 28vh;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 10px 0px;
+        text-align: center;
+        display: grid;
         p{
+            padding: 0px 200px;
             text-align: justify;
         }
     }
