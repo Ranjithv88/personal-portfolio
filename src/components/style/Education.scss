@@ -13,6 +13,8 @@
         text-align: center;
         font-size: 40px;
         padding: 40px 0px;
+        animation: autoShowAnimation;
+        animation-timeline: view();
     }
     div{
         mask-image: url('../../assets/img/Education\ Design\ Background\ Image.png');
@@ -30,6 +32,16 @@
             padding: 0px 200px;
             text-align: justify;
         }
+    }
+}
+@keyframes autoShowAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 
