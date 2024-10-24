@@ -1,23 +1,22 @@
-import React from 'react'
+import {React,useContext} from 'react'
 import './style/NavBar.scss'
+import { Scroll } from '../App';
 
 function NavBar() {
-    const scroll = (y) => {
-        window.scrollTo({ top: y, behavior: 'smooth' });
-     };
+    const scrollContext = useContext(Scroll)
   return (
-    <header>
+    <header className='components'>
         <nav>
             <div className='name'>
                 <h1>RANJITH KUMAR</h1>
             </div>
             <div className='menu'>
                 <ul className='menuList'>
-                    <li onClick={() => scroll(0)}>Home</li>
-                    <li onClick={() => scroll(550)}>Project</li>
-                    <li onClick={() => scroll(1200)}>Skills</li>
-                    <li onClick={() => scroll(2650)}>Education</li>
-                    <li onClick={() => scroll(3000)}>About</li>
+                    <li onClick={() => scrollContext.setValue(1)}>Home</li>
+                    <li onClick={() => scrollContext.setValue(2)}>Project</li>
+                    <li onClick={() => scrollContext.setValue(3)}>Skills</li>
+                    <li onClick={() => scrollContext.setValue(4)}>Education</li>
+                    <li onClick={() => scrollContext.setValue(5)}>About</li>
                 </ul>
             </div>
         </nav>

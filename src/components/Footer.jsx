@@ -7,7 +7,7 @@ import { CiMail } from "react-icons/ci";
 
 function Footer() {
   return (
-    <footer>
+    <footer className='components'> 
       <div className='Empty'></div>
       <h1 className='FTitle'>About</h1>
         <div className='FContent'>

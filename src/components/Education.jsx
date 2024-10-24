@@ -3,7 +3,7 @@ import './style/Education.scss'
 
 function Education() {
   return (
-    <main className='Education'>
+    <main className='Education components'>
         <h1 className='EducationTitle'>EDUCATION</h1>
         <div>
           <h1>BACHELOR OF COMPUTER APPLICATION</h1>

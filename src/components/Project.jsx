@@ -1,9 +1,9 @@
 import React from 'react'
 import './style/Project.scss'
 
-function project() {
+function Project() {
   return (
-    <main className='Project'>
+    <main className='Project components'>
       <h1 className='ProjectTitle'>Project I Created</h1>
       <div className='ProjectOuter'>
           <div>
@@ -29,5 +29,5 @@ function project() {
   )
 }
 
-export default project
+export default Project
 
