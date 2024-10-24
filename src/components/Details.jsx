@@ -1,5 +1,5 @@
 import img from "../assets/icons/Java-Logo.png"
-import img1 from "../assets/icons/MySql-Logo.png"
+import img1 from "../assets/icons/MySQL-Logo.png"
 import img2 from "../assets/icons/Mongodb-Logo.png"
 import img3 from '../assets/icons/Redis-Logo.png'
 import img4 from '../assets/icons/Spring-Logo.png'
