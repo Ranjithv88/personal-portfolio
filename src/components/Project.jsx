@@ -3,7 +3,8 @@ import './style/Project.scss'
 
 function Project() {
   return (
-    <main className='Project components'>
+    <main className='Project scroll'>
+      <div className='Empty'></div>
       <h1 className='ProjectTitle'>Project I Created</h1>
       <div className='ProjectOuter'>
           <div>

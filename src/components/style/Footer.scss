@@ -4,12 +4,13 @@ footer{
     width: 100vw;
     background-color: white;
     padding: 40px 0px;
-    mask-image: url('../../assets/img/Brush\ Design\ Image02.png');
+    mask-image: url('../../assets/img/About-Brush-Mask-Image.png');
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
     mask-position: top;
     .Empty{
-        height: 20vh;
+        height: 10vh;
+        width: 100vw;
     }
     .FTitle{
         font-size: 40px;
@@ -27,6 +28,9 @@ footer{
                 font-size: 20px;
             }
             h4{
+                span{
+                    font-size: 30px;
+                }
                 font-size: 25px;
                 padding: 5px 0px;
             }
@@ -47,11 +51,11 @@ footer{
                 justify-content: end;
                 align-items: center;
                 a{
-                    font-size: 30px;
+                    font-size: 28px;
                     padding: 5px;
                 }
                 a:hover{
-                    font-size: 35px;
+                    font-size: 32px;
                 }
             }
         }

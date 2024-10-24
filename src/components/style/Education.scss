@@ -9,6 +9,10 @@
     justify-items: center;
     align-items: center;
     padding-bottom: 100px;
+    .Empty{
+        height: 12.5vh;
+        width: 100vw;
+    }
     .EducationTitle{
         text-align: center;
         font-size: 40px;
@@ -16,13 +20,12 @@
         animation: autoShowAnimation;
         animation-timeline: view();
     }
-    div{
-        mask-image: url('../../assets/img/Education\ Design\ Background\ Image01.png');
+    .EducationDetails{
+        mask-image: url('../../assets/img/Education-Brush-Mask-Image.png');
         mask-repeat: no-repeat;
         mask-size: cover;
         mask-position: center;
         width: 90vw;
-        height: 28vh;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         padding: 10px 0px;

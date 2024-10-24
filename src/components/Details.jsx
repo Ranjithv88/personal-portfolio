@@ -86,3 +86,30 @@ export const Skills = [
     }
 ]
 
+export const Course = [
+    {
+        key: 0,
+        courseName:"JAVA FULL STACK DEVELOPMENT",
+        instituteName:"LiveWire",
+        description:"A Java Full Stack Developer is a software engineer skilled in both front-end and back-end development, utilizing the Java programming language for back-end tasks. They possess a comprehensive understanding of various layers of web development, allowing them to build and maintain end-to-end applications."
+    },
+    {
+        key: 1,
+        courseName:"BACHELOR OF COMPUTER APPLICATION",
+        instituteName:"Hindustan College of Arts and Science",
+        description:"Hindustan College of Arts and Science is an autonomous private institution founded in 1998 managed by Hindustan Educational and Charitable Trust. The college is located on Avinashi Road in Coimbatore India."
+    },
+    {
+        key: 2,
+        courseName:"HSC",
+        instituteName:"Government Boys Higher Secondary School",
+        description:"Higher Secondary Certificate (HSC), Higher Secondary School Certificate (HSSC) or Higher Secondary Education Certificate (HSEC) is a secondary education qualification in Bangladesh, India and Pakistan. It is equivalent to the final year of high school in the United States and GCSE and/or A level in the United Kingdom."
+    },
+    {
+        key: 3,
+        courseName:"SSLC",
+        instituteName:"Government Boys Higher Secondary School",
+        description:"The Secondary School Leaving Certificate (commonly referred to as SSLC) is a certification obtained by a student on successful completion of an examination at the end of study at the secondary schooling level in India. The SSLC is obtained on passing the grade 10 public examination, which is commonly referred to as 'class 10 board examinations' in India."
+    }
+]
+
