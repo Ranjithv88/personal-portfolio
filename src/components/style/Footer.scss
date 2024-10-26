@@ -4,10 +4,7 @@ footer{
     width: 100vw;
     background-color: white;
     padding: 40px 0px;
-    mask-image: url('../../assets/img/About-Brush-Mask-Image.png');
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-    mask-position: top;
+    mask: url('../../assets/img/About-Brush-Mask-Image.png') no-repeat top / 100% 100%;
     .Empty{
         height: 10vh;
         width: 100vw;
@@ -25,11 +22,11 @@ footer{
             width: 50vw;
             p{
                 text-align: justify;
-                font-size: 20px;
+                font-size: 16px;
             }
             h4{
                 span{
-                    font-size: 30px;
+                    font-size: 28px;
                 }
                 font-size: 25px;
                 padding: 5px 0px;
@@ -41,9 +38,11 @@ footer{
         .FTwo{
             width: 20vw;
             h1{
+                font-size: 30px;
                 padding: 10px 0px;
                 text-align: end;
                 font-weight: bold;
+                font-family: "Kablammo", sans-serif;
             }
             .FIcon{
                 overflow: hidden;

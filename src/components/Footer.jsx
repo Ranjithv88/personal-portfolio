@@ -17,7 +17,7 @@ function Footer() {
           <h5>CoimBatore,Tamil Nadu,India</h5>
           </div>
           <div className='FTwo'>
-            <h1>CONTACT US</h1>
+            <h1>Contact Us</h1>
             <div className='FIcon'>
               <a target='_blank' href="Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
               <a target='_blank' href="https://github.com/Ranjithv88"><FaGithub /></a>

@@ -2,7 +2,7 @@
 /*--------------------------- Education Components --------------------*/
 .Education{
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(26, 27, 32);
     color: rgb(255, 255, 255);
     display: grid;
     row-gap: 20px;
@@ -17,34 +17,39 @@
         text-align: center;
         font-size: 40px;
         padding: 40px 0px;
-        animation: autoShowAnimation;
-        animation-timeline: view();
+        animation: autoShowAnimation both;
+        animation-timeline: view(50% 5%);
+        @keyframes autoShowAnimation {
+            from{
+                opacity: 0;
+                transform: translateY(200px) scale(0.3);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
     }
     .EducationDetails{
-        mask-image: url('../../assets/img/Education-Brush-Mask-Image.png');
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        mask-position: center;
+        mask: url('../../assets/img/Education-Brush-Mask-Image.png') no-repeat center / cover;
         width: 90vw;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         padding: 10px 0px;
         text-align: center;
         display: grid;
+        h1{
+            font-family: "Agdasima", sans-serif;
+            font-size: 20px;
+        }
+        h2{
+            font-size: 18px;
+        }
         p{
             padding: 0px 200px;
             text-align: justify;
+            font-size: 15px;
         }
-    }
-}
-@keyframes autoShowAnimation {
-    from{
-        opacity: 0;
-        transform: translateY(200px) scale(0.3);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
     }
 }
 

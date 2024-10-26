@@ -17,8 +17,37 @@
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
     }
+    p{
+        font-family: "Moderustic", sans-serif;
+    }
+    h1{
+        font-family: "Oswald", sans-serif;
+    }
+    h2{
+        font-family: "Agdasima", sans-serif;
+    }
 }
+
+/*------------- App Elements -------------*/
 .App{
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(26, 27, 32, 1);
+}
+
+/*------------- Fonts( Kablammo, Moderustic, Oswald, Agdasima ) -------------*/
+@font-face {
+    font-family: Kablammo;
+    src: url('./assets/fonts/Kablammo.ttf');
+}
+@font-face {
+    font-family: Moderustic;
+    src: url('./assets/fonts/Moderustic.ttf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('./assets/fonts/Oswald.ttf');
+}
+@font-face {
+    font-family: Agdasima;
+    src: url('./assets/fonts/Agdasima.ttf');
 }
 

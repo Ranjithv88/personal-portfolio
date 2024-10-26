@@ -1,6 +1,6 @@
-import { React,useContext } from 'react'
+import { React, useContext } from 'react'
 import './style/NavBar.scss'
-import { Scroll } from '../App'
+import { Scroll } from '../HomePage'
 
 function NavBar() {
     const scrollContext = useContext(Scroll)
