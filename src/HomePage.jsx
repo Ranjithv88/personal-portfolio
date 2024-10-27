@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
+import './HomePage.scss'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Project from './components/Project'
@@ -17,11 +18,11 @@ function HomePage() {
   useEffect(() => {
     const homePage = document.getElementsByClassName('scroll')
     homePage[value].scrollIntoView({ block: 'start' })
-    timeoutId = setTimeout(() => {
-      console.log(' working timeout.... ')
-      setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
-    }, 30000)
-    return () => { console.log(' working clearUp.... ');clearTimeout(timeoutId) }
+    // timeoutId = setTimeout(() => {
+    //   console.log(' working timeout.... ')
+    //   setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
+    // }, 90000)
+    // return () => { console.log(' working clearUp.... ');clearTimeout(timeoutId) }
   }, [value])
   // const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
   // HomeDiv[0].EventListener("mousemove",simple())

@@ -10,6 +10,27 @@ import img8 from '../assets/icons/CSS-Logo.png'
 import img9 from '../assets/icons/JS-Logo.png'
 import img10 from '../assets/icons/React-Logo.png'
 import img11 from '../assets/icons/Sass-Logo.png'
+import img12 from '../assets/img/Peter-Griffin-intro.png'
+import img13 from '../assets/img/Furniture-Intro.png'
+
+export const Projects =[
+    {
+        key: 1,
+        image:img12,
+        name: "Peter Griffin Template",
+        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, given below the Screenshot And LiveDemo.",
+        live:"https://ranjithv88.github.io/Peter-Griffin--Templates/",
+        githubRepository:"https://github.com/Ranjithv88/Peter-Griffin--Templates"
+    },
+    {
+        key: 2,
+        image:img13,
+        name: "Furniture Template",
+        description:"This Site is the Dynamic Website ,React JS Use to Create Site this ia Furniture E-commerce site ,this project using front End is the React Js And no BackEnd Using ,given below the Screenshot And LiveDemo.",
+        live:"https://furniture-templates.vercel.app/",
+        githubRepository:"https://github.com/Ranjithv88/Furniture--Templates"
+    }
+]
 
 export const Skills = [
     {

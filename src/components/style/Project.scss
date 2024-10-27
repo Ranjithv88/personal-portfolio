@@ -1,7 +1,6 @@
 
 /*--------------------------- Project Components --------------------*/
 .Project{
-    height: 100vh;
     background-color: rgb(26, 27, 32);
     color: rgb(255, 255, 255);
     .Empty{
@@ -13,36 +12,52 @@
         text-align: center;
     }
     .ProjectOuter{
-    padding: 50px 100px;
+    padding: 50px 50px;
     display: grid;
-    grid-template-columns: repeat( auto-fill,  minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-        div{
-            display: grid;
-            height: 60vh;
-            border-radius: 60px;
-            display: grid;
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 10px;
-            h1{
-                font-size: 30px;
+        .ProjectMap{
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 4px;
+            .ProjectPreview{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50vh;
+                display: grid;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                h1{
+                    font-size: 50px;
+                    -webkit-text-stroke: 2px rgba(255, 255, 255, 1);
+                    color: transparent;
+                }
             }
-            h2{
-                font-size: 18px;
-                text-align: start;
-            }
-            p{
-                text-align: justify;
-                font-size: 15px;
-            }
-            a{
-                font-size: 20px;
-                text-transform: uppercase;
-            }
-            a:hover{
-                color: rgb(0, 120, 212);
+            .ProjectDetails{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                color: rgba(0, 0, 0, 1);
+                p{
+                    padding: 4px 20px;
+                    text-align: justify;
+                    font-size: 15px;
+                    grid-column: span 2;
+                }
+                a{
+                    font-size: 30px;
+                    color: rgba(26, 27, 32, 1);
+                    padding: 4px 30px;
+                }
+                .ProjectLive{
+                    text-align: end;
+                }
+                a:hover{
+                    color: rgba(255, 217, 0, 0.5);
+                }
             }
         }
     }
