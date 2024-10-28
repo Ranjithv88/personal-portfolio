@@ -1,0 +1,5 @@
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background-color: rgba(26, 27, 32, 1); /* Background color of the scrollbar */
+    color: red;
+}
