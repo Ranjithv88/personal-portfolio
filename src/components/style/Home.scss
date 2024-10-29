@@ -23,29 +23,46 @@ header{
             top: 40%;
             left: 12%;
             width: 48vw;
-            padding: 2px;
-            display: grid;
-            row-gap: 10px;
-            p{
-                font-size: 16px;
-                text-align: justify;
+            .java{
+                font-family: 'JetBrainsMono',sans-serif;
+                color: rgba(196, 140, 103, 1);
             }
-            button{
-                border-radius: 10px;
-                border: 2px solid rgb(255, 255, 255);
-                padding: 7px 10px;
-                margin: 5px;
-                width: fit-content;
-                font-size: 28px;
-                cursor: pointer;
-                background-color: rgb(26, 27, 32);
-                color: rgb(255, 255, 255);
-                transition: 0.8s;
-                font-family: "Kablammo", sans-serif;
+            span{
+            color: rgb(255, 255, 255);
             }
-            button:hover{
-                background-color: rgb(255, 255, 255);
-                color: rgb(0, 0, 0);
+            .main{
+               padding-left: 28px;
+            }
+            .colour{
+                color: rgba(83, 163, 239, 1);
+            }
+            .HContent{
+                padding: 2px;
+                padding-left: 58px;
+                display: grid;
+                row-gap: 10px;
+                color: rgba(89, 120, 64, 1);
+                p{
+                    font-size: 16px;
+                    text-align: justify;
+                }
+                button{
+                    border-radius: 10px;
+                    border: 2px solid rgb(255, 255, 255);
+                    padding: 7px 10px;
+                    margin: 5px;
+                    width: fit-content;
+                    font-size: 28px;
+                    cursor: pointer;
+                    background-color: rgb(26, 27, 32);
+                    color: rgb(255, 255, 255);
+                    transition: 0.8s;
+                    font-family: "Kablammo", sans-serif;
+                }
+                button:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                }
             }
         }
     }

@@ -11,15 +11,19 @@ export const Scroll = createContext()
 
 function HomePage() {
   const [value, setValue] = useState(0)
+  const [con, setCon] = useState(20000)
   let timeoutId = null
-  
   useEffect(() => {
     const homePage = document.getElementsByClassName('scroll')
     homePage[value].scrollIntoView({ block: 'start' })
-    timeoutId = setTimeout(() => {
-      setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
-    }, 90000)
-    return () => { clearTimeout(timeoutId) }
+      timeoutId = setTimeout(() => {
+        if(con === 20000)
+          setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
+        else{
+          setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
+        }
+      }, con)
+      return () => { clearTimeout(timeoutId); setCon(20000) }
   }, [value])
   const handleTimeOut = ()=>{
     if(timeoutId !== null)
@@ -29,16 +33,16 @@ function HomePage() {
     }, 90000)
   }
   return (
+    <Scroll.Provider value={{ setValue,handleTimeOut, setCon }}>
     <div className='HomePage' onClick={handleTimeOut}>
-      <Scroll.Provider value={{ setValue }}>
         <NavBar />
         <Home />
         <Project />
         <Skill />
         <Education />
         <Footer />
-      </Scroll.Provider>
     </div>
+    </Scroll.Provider>
   )
 }
 

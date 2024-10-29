@@ -1,8 +1,15 @@
 
 /*--------------------------- HomePage Components --------------------*/
-*{
-    scrollbar-width: thin; 
-    scrollbar-color: rgba(255, 255, 255, 1) rgba(26, 27, 32, 1);    
+::-webkit-scrollbar{
+    width: 12px;
 }
+::-webkit-scrollbar-track {
+    background: rgba(26, 27, 32, 1);
+ }
+ ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    border: 1.5px solid rgba(26, 27, 32, 1);
+ }
 
-
+ 

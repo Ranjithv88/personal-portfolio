@@ -17,9 +17,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
         .ProjectMap{
-            background-color: rgba(255, 255, 255, 1);
+            background-color: rgba( 236, 240, 243, 1);
             border-radius: 4px;
             padding: 10px;
+            box-shadow: inset 5px 5px 12px rgba( 255, 255, 255, 1),
+                        8px 8px 18px rgba( 0, 0, 0, 1);
             .ProjectPreview{
                 display: flex;
                 justify-content: center;
@@ -56,24 +58,18 @@
                 }
                 a{
                     font-size: 30px;
-                    color: rgba(26, 27, 32, 1);
+                    color: rgba(26, 27, 32, 0.8);
                     padding: 4px 30px;
+                    transition: 0.8;
                 }
                 .ProjectLive{
                     text-align: end;
                 }
                 a:hover{
-                    color: rgba(255, 217, 0, 0.5);
+                    color: rgba(26, 27, 32, 1);
                 }
             }
         }
     }
-}
-
-
-:root{
-    box-shadow: inset -5px -5px 12px rgba( 255, 255, 255, 1),
-                        5px 5px 12px rgba( 0, 0, 0, 0.16);
-    background-color: rgba( 236, 240, 243, 1);
 }
 
