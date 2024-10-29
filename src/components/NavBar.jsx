@@ -11,7 +11,7 @@ function NavBar() {
                 <h1>RANJITH KUMAR</h1>
             </div>
             <div className='menu'>
-                <ul className='menuList'>
+                <ul className='menuList' >
                     <li onClick={() => scrollContext.setValue(0)}>Home</li>
                     <li onClick={() => scrollContext.setValue(1)}>Project</li>
                     <li onClick={() => scrollContext.setValue(2)}>Skills</li>

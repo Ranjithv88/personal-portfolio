@@ -18,7 +18,7 @@ export const Projects =[
         key: 1,
         image:img12,
         name: "Peter Griffin Template",
-        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, given below the Screenshot And LiveDemo.",
+        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, This E-commerce Website buying product idea for homePage demo, given below the LiveDemo.",
         live:"https://ranjithv88.github.io/Peter-Griffin--Templates/",
         githubRepository:"https://github.com/Ranjithv88/Peter-Griffin--Templates"
     },
@@ -26,7 +26,7 @@ export const Projects =[
         key: 2,
         image:img13,
         name: "Furniture Template",
-        description:"This Site is the Dynamic Website ,React JS Use to Create Site this ia Furniture E-commerce site ,this project using front End is the React Js And no BackEnd Using ,given below the Screenshot And LiveDemo.",
+        description:"This Site is the Dynamic Website ,React JS Use to Create Site this ia Furniture E-commerce site ,this project using front End is the React Js And no BackEnd Using ,given below the  LiveDemo.",
         live:"https://furniture-templates.vercel.app/",
         githubRepository:"https://github.com/Ranjithv88/Furniture--Templates"
     }
