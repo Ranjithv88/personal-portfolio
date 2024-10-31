@@ -1,21 +1,38 @@
 import React from 'react'
 import './style/Home.scss'
+import TypingText from './TypingText'
+import { IoIosArrowUp,IoIosArrowDown } from "react-icons/io"
+import { FaGithub,FaLinkedin,FaCodepen } from "react-icons/fa"
+import { RiInstagramFill } from "react-icons/ri"
+import { MdMailOutline } from "react-icons/md"
 
 function Home() {
   return (
     <header className="home scroll">
         <div className="intro">
+          <div className='HContact'>
+            <IoIosArrowUp />
+            <div></div>
+            <a target='_blank' href="Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
+              <a target='_blank' href="https://github.com/Ranjithv88"><FaGithub /></a>
+              <a target='_blank' href="https://www.linkedin.com/in/ranjith-kumar-9838a5274/"><FaLinkedin /></a>
+              <a target='_blank' href="https://www.instagram.com/ranjith_kumar__v/"><RiInstagramFill /></a>
+              <a target='_blank' href="https://codepen.io/ranjith-kumar-the-sasster"><FaCodepen /></a>
+            <div></div>
+            <IoIosArrowDown />
+            <main></main>
+          </div>
             <div className="profile">
-              <h1 className='java'>{`public class`}<span>{` PortFolio`}</span>{` {`}</h1>
-              <h1 className='java main'>{`public static void`}<span className='colour'>{` main`}</span><span>{` (String[] args)`}</span>{` {`}</h1>
+              <h1 className='java'>{`public class`}<span>{` PortFolio`}</span><span className='color01'>{` {`}</span></h1>
+              <h1 className='java main'>{`public static void`}<span className='color'>{` main`}</span><span>{`(String[] args)`}</span><span className='color01'>{` {`}</span></h1>
               <div className='HContent'>
-                <h1>My Name is Ranjith Kumar</h1>
-                <h1>I Am a java Full Stuck Devoleper</h1>
+                <h1>|<TypingText text={"My Name is Ranjith Kumar"}/>|</h1>
+                <h1>|<TypingText text={"I Am a java Full Stuck Devoleper"}/>|</h1>
                 <p>A passionate Java developer with experience in building dynamic web applications using React.js and Spring Boot. Proficient in Java, JavaScript, and front-end technologies. Recently worked on projects such as an "Image-Based Plant Disease Detection" using CNN and OpenCV, and a "Dynamic Furniture E-commerce Website" with React.js.</p>
                 <button type='button'>RESUME</button>
               </div>
-              <h1 className='java main'>{`}`}</h1>
-              <h1 className='java'>{`}`}</h1>
+              <h1 className='java main'><span className='color01'>{` }`}</span></h1>
+              <h1 className='java'><span className='color01'>{` }`}</span></h1>
             </div>
         </div>
     </header>

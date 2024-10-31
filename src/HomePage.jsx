@@ -19,13 +19,12 @@ function HomePage() {
       timeoutId = setTimeout(() => {
         if(con === 20000)
           setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
-        else{
+        else
           setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
-        }
       }, con)
       return () => { clearTimeout(timeoutId); setCon(20000) }
   }, [value])
-  const handleTimeOut = ()=>{
+  const handleTimeOut = () => {
     if(timeoutId !== null)
       clearTimeout(timeoutId)
     timeoutId = setTimeout(() => {
@@ -33,8 +32,8 @@ function HomePage() {
     }, 90000)
   }
   return (
-    <Scroll.Provider value={{ setValue,handleTimeOut, setCon }}>
-    <div className='HomePage' onClick={handleTimeOut}>
+    <Scroll.Provider value={{ setValue, setCon }}>
+    <div className='HomePage' onClick={ handleTimeOut }>
         <NavBar />
         <Home />
         <Project />

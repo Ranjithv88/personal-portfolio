@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/Education.scss'
 import { Course } from './Details.jsx'
+import { color, motion } from 'framer-motion'
 
 function Education() {
   return (

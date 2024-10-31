@@ -16,13 +16,42 @@ header{
     .intro{
         height: 100vh;
         width: 100vw;
-        background-color: rgb(26, 27, 32);
-        color: rgb(255, 255, 255);
+        background-color: rgba(26, 27, 32, 1);
+        color: rgba(255, 255, 255, 1);
+        .HContact{
+            height: 100vh;
+            width: 4vw;
+            position: absolute;
+            background-color: rgba(26, 27, 32, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            div{
+                height: 12vh;
+                border: 1px solid rgba(255, 255, 255, 1);
+                padding-bottom: 10px;
+            }
+            a{
+                color: rgba(255, 255, 255, 1);
+                font-size: 20px;
+                padding: 4px 0px;
+                transition: 1;
+            }
+            a:hover{
+                font-size: 24px;
+                color: rgba(218, 99, 161, 1);
+                padding: 1px 0px;
+            }
+            main{
+                height: 3vh;
+            }
+        }
         .profile{
             position: absolute;
-            top: 40%;
+            top: 20%;
             left: 12%;
-            width: 48vw;
+            width: 60vw;
             .java{
                 font-family: 'JetBrainsMono',sans-serif;
                 color: rgba(196, 140, 103, 1);
@@ -33,8 +62,11 @@ header{
             .main{
                padding-left: 28px;
             }
-            .colour{
+            .color{
                 color: rgba(83, 163, 239, 1);
+            }
+            .color01{
+                color: rgba(215, 186, 125, 1);
             }
             .HContent{
                 padding: 2px;
