@@ -56,17 +56,22 @@
                     font-size: 15px;
                     grid-column: span 2;
                 }
-                a{
-                    font-size: 30px;
-                    color: rgba(26, 27, 32, 0.8);
-                    padding: 4px 30px;
-                    transition: 0.8;
+                span{
+                    overflow: hidden;
+                    a{
+                        font-size: 34px;
+                        color: rgba(26, 27, 32, 0.8);
+                        padding: 4px 30px;
+                        transition: 0.8;
+                    }
+                    a:hover{
+                        color: rgba(26, 27, 32, 1);
+                    }
                 }
                 .ProjectLive{
-                    text-align: end;
-                }
-                a:hover{
-                    color: rgba(26, 27, 32, 1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
                 }
             }
         }

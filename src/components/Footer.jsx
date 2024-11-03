@@ -4,12 +4,14 @@ import { FaLocationDot } from "react-icons/fa6"
 import { FaGithub,FaLinkedin,FaCodepen } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
 import { MdMailOutline } from "react-icons/md"
+import { motion } from 'framer-motion'
+import { STAnimation } from './Details.jsx'
 
 function Footer() {
   return (
     <footer className='scroll'> 
       <div className='Empty'></div>
-      <h1 className='FTitle'>About</h1>
+      <motion.h1 className='FTitle' variants={STAnimation} initial='hidden' whileInView='visible' transition={{ duration: 2 }} viewport={{ amount: 0.8 }} >About</motion.h1>
         <div className='FContent'>
           <div className='FOne'>
           <p>&nbsp;&nbsp;&nbsp;A personal portfolio is a website or document that showcases an individual's skills, experiences, projects, and achievements. It serves as a digital resume that goes beyond listing qualifications, allowing you to present a more detailed and interactive view of your work.</p>

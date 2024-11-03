@@ -13,12 +13,12 @@
         text-align: center;
     }
     .SkillInner{
-        padding: 80px;
+        padding: 6vw;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
         column-gap: 20px;
         row-gap: 28px;
-        div{
+        .Skill{
             display: grid;
             text-align: justify;
             align-items: center;
@@ -27,6 +27,7 @@
             border: 2px solid rgb(26, 27, 32);
             transition: border 1s;
             padding: 10px;
+            cursor: pointer;
             h1{
                 text-align: center;
                 padding-bottom: 20px;
@@ -42,23 +43,78 @@
                 transition: 1s;
             }
         }
-        div:hover{
+        .SelectedSkill{
+            position: absolute;
+            left: 25%;
+            height: 46vh;
+            width: 50vw;
+            background-color: rgba(236, 240, 243, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgba(0, 0, 0, 1);
+            padding: 3vh 2vw;
+            border-radius: 4px;
+            box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2),
+                    2px 2px 2px rgba(0, 0, 0, 0.5);
+            filter: brightness(90%);
+            cursor: default;
+            .SelectedSkill01{
+                height: 40vh;
+                width: 10vw;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                place-items: center;
+                img{
+                    height: 10vw;
+                    width: 10vw;
+                    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+                }
+                div{
+                    height: 1vw;
+                    width: 8vw;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                    filter: blur(8px);
+                }
+            }
+            .SelectedSkill02{
+                width: 30vw;
+                text-align: justify;
+                display: grid;
+                row-gap: 10px;
+            }
+            .SelectedSkill03{
+                height: 40vh;
+                width: 2vw;
+                button{
+                    margin-top: 1vh;
+                    color: rgba(255, 0, 0, 1);
+                    background-color: transparent;
+                    font-size: 2vw;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .Skill:hover{
             border: 2px solid rgba(192, 192, 192, 0.8);
             img{
                 filter: grayscale(0) brightness(80%) drop-shadow(10px 10px 1px rgba(255, 217, 0, 0.8));
             }
         }
-        div:nth-child(1):hover{
+        .Skill:nth-child(1):hover{
             img{
                 filter: grayscale(0) brightness(80%) drop-shadow(0px 0px 20px rgba(255, 217, 0, 0.6));
             }
         }
-        div:nth-child(12):hover{
+        .Skill:nth-child(12):hover{
             img{
                 filter:  grayscale(0) brightness(80%)  drop-shadow(0px 0px 20px rgba(212, 66, 88, 0.8));
             }
         }
-        div:nth-child(2):hover,:nth-child(11):hover{
+        .Skill:nth-child(2):hover,:nth-child(11):hover{
             img{
                 filter:  grayscale(0) brightness(80%)  drop-shadow(0px 0px 20px rgba(10, 53, 145, 0.8));
             }

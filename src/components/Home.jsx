@@ -5,12 +5,14 @@ import { IoIosArrowUp,IoIosArrowDown } from "react-icons/io"
 import { FaGithub,FaLinkedin,FaCodepen } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
 import { MdMailOutline } from "react-icons/md"
+import { motion } from 'framer-motion'
+import { STAnimation } from './Details.jsx'
 
 function Home() {
   return (
     <header className="home scroll">
         <div className="intro">
-          <div className='HContact'>
+          <motion.div className='HContact' initial={{x: -50}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
             <IoIosArrowUp />
             <div></div>
             <a target='_blank' href="Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
@@ -21,8 +23,8 @@ function Home() {
             <div></div>
             <IoIosArrowDown />
             <main></main>
-          </div>
-            <div className="profile">
+          </motion.div>
+            <motion.div className="profile" variants={STAnimation} initial='hidden' whileInView='visible' transition={{ duration: 2 }} viewport={{ amount: 0 }} >
               <h1 className='java'>{`public class`}<span>{` PortFolio`}</span><span className='color01'>{` {`}</span></h1>
               <h1 className='java main'>{`public static void`}<span className='color'>{` main`}</span><span>{`(String[] args)`}</span><span className='color01'>{` {`}</span></h1>
               <div className='HContent'>
@@ -33,7 +35,7 @@ function Home() {
               </div>
               <h1 className='java main'><span className='color01'>{` }`}</span></h1>
               <h1 className='java'><span className='color01'>{` }`}</span></h1>
-            </div>
+            </motion.div>
         </div>
     </header>
   )

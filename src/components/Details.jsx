@@ -13,6 +13,11 @@ import img11 from '../assets/icons/Sass-Logo.png'
 import img12 from '../assets/img/Peter-Griffin-intro.png'
 import img13 from '../assets/img/Furniture-Intro.png'
 
+export const STAnimation ={
+    hidden: { opacity: 0, y: 100, scale: 0 },
+    visible: { opacity: 1, y: 0, scale: 1 },
+}
+
 export const Projects =[
     {
         key: 1,
