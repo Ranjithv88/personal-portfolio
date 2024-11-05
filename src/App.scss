@@ -31,6 +31,18 @@
 /*------------- App Elements -------------*/
 .App{
     background-color: rgba(26, 27, 32, 1);
+    .circle{
+        --circle-size: 40px;
+        position: fixed;
+        height: var(--circle-size);
+        width: var(--circle-size);
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 100%;
+        top: calc(var(--circle-size)/2*-1);
+        left: calc(var(--circle-size)/2*-1);
+        pointer-events: none;
+        z-index: 22;
+    }
 }
 
 /*------------- Fonts( Kablammo, Moderustic, Oswald, Agdasima ) -------------*/

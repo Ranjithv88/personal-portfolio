@@ -3,13 +3,18 @@ import './style/Skills.scss';
 import { Skills, STAnimation } from './Details.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaRegWindowClose } from "react-icons/fa";
+import { use } from 'framer-motion/client';
 
 function Skill() {
   const [selectedKey, setSelectedKey] = useState(null)
   const selectedSkill = Skills.find(skill => skill.key === selectedKey)
   const ref = useRef()
+  const [fixRender, setFixRender] = useState(true)
   useEffect(()=>{
-    ref.current.scrollIntoView({ block: 'start' })
+    if(!fixRender)
+      ref.current.scrollIntoView({ block: 'start' })
+    else
+      setFixRender(false)
   },[selectedKey])
   return (
     <main ref={ref} className='Skills scroll'>

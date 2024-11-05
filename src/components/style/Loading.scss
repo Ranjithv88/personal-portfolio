@@ -16,13 +16,18 @@
     .LoadingInner{
         height: 100px;
         width: 100px;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgba( 236, 240, 243, 1);
         position: absolute;
         top: 50%;
         left: 50%;
-        border-radius: 20%;
+        border-radius: 50%;
         z-index: 2;
+        .LoadingCenter{
+            border-radius: 50%;
+            height: 28px;
+            width: 28px;
+            background-color: rgba(26, 27, 32, 1);
+        }
     }
 }
-
 
