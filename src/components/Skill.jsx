@@ -3,7 +3,6 @@ import './style/Skills.scss';
 import { Skills, STAnimation } from './Details.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaRegWindowClose } from "react-icons/fa";
-import { use } from 'framer-motion/client';
 
 function Skill() {
   const [selectedKey, setSelectedKey] = useState(null)

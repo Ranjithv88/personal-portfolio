@@ -21,7 +21,7 @@ function Footer() {
           <div className='FTwo'>
             <h1>Contact Us</h1>
             <div className='FIcon'>
-              <a target='_blank' href="Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
+              <a target='_blank' href="mailto:Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
               <a target='_blank' href="https://github.com/Ranjithv88"><FaGithub /></a>
               <a target='_blank' href="https://www.linkedin.com/in/ranjith-kumar-9838a5274/"><FaLinkedin /></a>
               <a target='_blank' href="https://www.instagram.com/ranjith_kumar__v/"><RiInstagramFill /></a>

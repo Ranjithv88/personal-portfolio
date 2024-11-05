@@ -18,7 +18,7 @@ function Home() {
           <motion.div className='HContact' initial={{x: -50}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
             <IoIosArrowUp />
             <div></div>
-            <a target='_blank' href="Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
+            <a target='_blank' href="mailto:Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>
               <a target='_blank' href="https://github.com/Ranjithv88"><FaGithub /></a>
               <a target='_blank' href="https://www.linkedin.com/in/ranjith-kumar-9838a5274/"><FaLinkedin /></a>
               <a target='_blank' href="https://www.instagram.com/ranjith_kumar__v/"><RiInstagramFill /></a>

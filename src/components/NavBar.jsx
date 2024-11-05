@@ -9,7 +9,7 @@ function NavBar() {
     <header>
         <nav>
             <div className='name'>
-                <motion.h1  initial={{y: -50}} whileInView={{y: 0}} transition={{ duration: 2 }} viewport={{ amount: 0 }} >RANJITH KUMAR</motion.h1>
+                <motion.h1  initial={{y: -25}} whileInView={{y: 0}} transition={{ duration: 1 }} viewport={{ amount: 0 }} >RANJITH KUMAR</motion.h1>
             </div>
             <div className='menu'>
                 <motion.ul className='menuList' initial={{y: -20}} whileInView={{y: 0}} transition={{ duration: 2 }} viewport={{ amount: 0 }} >
