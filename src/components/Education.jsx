@@ -10,7 +10,7 @@ function Education() {
         <motion.h1 className='EducationTitle' variants={STAnimation} initial={{opacity: 0}} whileInView='visible' transition={{ duration: 3 }} viewport={{ amount: 0.8 }} >EDUCATION</motion.h1> 
         {Course.map((course, key)=>(
           <motion.div className='EducationDetails'
-          initial={{ scale: 0.5 }} whileInView={{ scale: 1, transition: { duration: 3 } }} viewport={{ amount: 0.8 }} 
+          initial={{ scale: 0.8 }} whileInView={{ scale: 1, transition: { duration: 2 } }} viewport={{ amount: 0.8 }} 
           key={key} >
             <h1>{course.courseName}</h1>
             <h2>{course.instituteName}</h2>

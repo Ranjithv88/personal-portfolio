@@ -10,7 +10,7 @@ import { STAnimation } from './Details.jsx'
 
 function Home() {
   const redirect = () => {
-    window.open('https://github.com/Ranjithv88/Ranjithv88/blob/main/RanjithKumar%20Resume.pdf', '_blank')
+    window.open('https://github.com/Ranjithv88/Ranjithv88/blob/main/Ranjith%20Kumar%20Simple%20Resume%20.pdf', '_blank')
   }
   return (
     <header className="home scroll">
