@@ -12,6 +12,7 @@ header{
         transform: translate(-20%);
         filter: blur(400px);
         z-index: 20;
+        pointer-events: none;
     }
     .intro{
         height: 100vh;
@@ -114,6 +115,7 @@ header{
             transform: translate(-50%, -50%);
             filter: blur(400px);
             z-index: 20;
+            pointer-events: none;
         }
         .intro{
             height: 100vh;
@@ -128,7 +130,7 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: end;
+                justify-content: center;
                 top:0;
                 left: 0;
                 div{
@@ -138,7 +140,7 @@ header{
                 }
                 a{
                     color: rgba(255, 255, 255, 1);
-                    font-size: 14px;
+                    font-size: 16px;
                     padding: 4px 0px;
                     transition: 1;
                 }
@@ -188,14 +190,10 @@ header{
                         width: fit-content;
                         font-size: 28px;
                         cursor: pointer;
-                        background-color: rgb(26, 27, 32);
-                        color: rgb(255, 255, 255);
+                        background-color: rgba(255, 255, 255, 1);
+                        color: rgba(0, 0, 0, 1);
                         transition: 0.8s;
                         font-family: "Kablammo", sans-serif;
-                    }
-                    button:hover{
-                        background-color: rgb(255, 255, 255);
-                        color: rgb(0, 0, 0);
                     }
                 }
             }

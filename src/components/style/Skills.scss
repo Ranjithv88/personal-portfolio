@@ -139,7 +139,7 @@
         .SkillInner{
             padding: 6vw;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
             column-gap: 10px;
             row-gap: 10px;
             .Skill{
@@ -149,7 +149,6 @@
                 align-items: center;
                 justify-items: center;
                 border-radius: 20px;
-                border: 2px solid rgb(26, 27, 32);
                 transition: border 1s;
                 padding: 10px;
                 cursor: pointer;
@@ -159,13 +158,18 @@
                     font-size: 12px;
                 }
                 p{
-                    font-size: 10px;
+                    display: none;
                 }
                 img{
                     height: 100px;
                     width: 100px;
                     filter: grayscale(100%) brightness(100%);
                     transition: 1s;
+                }
+            }
+            .Skill:hover{
+                img{
+                    filter: none;
                 }
             }
             .SelectedSkill{
@@ -208,6 +212,9 @@
                     display: grid;
                     row-gap: 5px;
                     font-size: 12px;
+                    h1{
+                        text-align: center;
+                    }
                 }
                 .SelectedSkill03{
                     height: 10vh;
