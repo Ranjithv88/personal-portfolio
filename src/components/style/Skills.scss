@@ -5,7 +5,7 @@
     background-color: rgb(26, 27, 32);
     color: rgb(255, 255, 255);
     .Empty{
-        height: 12.5vh;
+        height: 15vh;
         width: 100vw;
     }
     .SkillTitle{
@@ -117,6 +117,112 @@
         .Skill:nth-child(2):hover,:nth-child(11):hover{
             img{
                 filter:  grayscale(0) brightness(80%)  drop-shadow(0px 0px 20px rgba(10, 53, 145, 0.8));
+            }
+        }
+    }
+}
+
+/*--------------------------- phone Skill Components --------------------*/
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .Skills{
+        width: 100vw;
+        background-color: rgb(26, 27, 32);
+        color: rgb(255, 255, 255);
+        .Empty{
+            height: 12.5vh;
+            width: 100vw;
+        }
+        .SkillTitle{
+            font-size: 20px;
+            text-align: center;
+        }
+        .SkillInner{
+            padding: 6vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+            column-gap: 10px;
+            row-gap: 10px;
+            .Skill{
+                border: 2px solid rgba(192, 192, 192, 0.8);
+                display: grid;
+                text-align: justify;
+                align-items: center;
+                justify-items: center;
+                border-radius: 20px;
+                border: 2px solid rgb(26, 27, 32);
+                transition: border 1s;
+                padding: 10px;
+                cursor: pointer;
+                h1{
+                    text-align: center;
+                    padding-bottom: 20px;
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                img{
+                    height: 100px;
+                    width: 100px;
+                    filter: grayscale(100%) brightness(100%);
+                    transition: 1s;
+                }
+            }
+            .SelectedSkill{
+                overflow-y: hidden;
+                position: absolute;
+                left: 0;
+                height: 76vh;
+                width: 90vw;
+                margin: 0 5vw;
+                background-color: rgba(236, 240, 243, 1);
+                display: grid;
+                align-items: center;
+                justify-content: space-between;
+                color: rgba(0, 0, 0, 1);
+                padding: 3vh 2vw;
+                border-radius: 4px;
+                box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2),
+                        2px 2px 2px rgba(0, 0, 0, 0.5);
+                filter: brightness(90%);
+                cursor: default;
+                .SelectedSkill01{
+                    height: 20vh;
+                    width: 88vw;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    place-items: center;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                    div{
+                        display: none;
+                    }
+                }
+                .SelectedSkill02{
+                    width: 88vw;
+                    height: 40vh;
+                    text-align: justify;
+                    display: grid;
+                    row-gap: 5px;
+                    font-size: 12px;
+                }
+                .SelectedSkill03{
+                    height: 10vh;
+                    width: 88vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        color: rgba(255, 0, 0, 1);
+                        background-color: transparent;
+                        font-size: 6vh;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

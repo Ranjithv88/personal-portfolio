@@ -29,7 +29,7 @@ function HomePage() {
       clearTimeout(timeoutId)
     timeoutId = setTimeout(() => {
       setValue(prevValue => (prevValue >= 4 ? 0 : prevValue + 1))
-    }, 90000)
+    }, 900000)
   }
   return (
     <Scroll.Provider value={{ setValue, setCon }}>

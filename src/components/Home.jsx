@@ -15,7 +15,7 @@ function Home() {
   return (
     <header className="home scroll">
         <div className="intro">
-          <motion.div className='HContact' initial={{x: -50}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
+          <motion.div className='HContact' initial={{x: -15}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
             <IoIosArrowUp />
             <div></div>
             <a target='_blank' href="mailto:Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>

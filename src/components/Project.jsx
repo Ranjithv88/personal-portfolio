@@ -13,7 +13,7 @@ function Project() {
       <div className='ProjectOuter'>
         {Projects.map((projects,key)=>(
           <motion.div className='ProjectMap' 
-          initial={{ x: -400 }} whileInView={{ x: 0, transition: { duration: 2 } }} viewport={{ amount: 0 }} 
+          initial={{ x: -100 }} whileInView={{ x: 0, transition: { duration: 2 } }} viewport={{ amount: 0 }} 
           key={key}>
             <div className='ProjectPreview' style={{  backgroundImage: `linear-gradient(rgba( 0, 0, 0, 0.2), rgba( 0, 0, 0, 0.2)), url(${projects.image})` }}>
                 <h1>{projects.name}</h1>
