@@ -18,6 +18,7 @@ function Skill() {
   return (
     <main ref={ref} className='Skills scroll'>
       <div className='Empty'></div>
+      {/* ------ I Code in ------ */}
       <motion.h1 className='SkillTitle' variants={STAnimation} initial='hidden' whileInView='visible' transition={{ duration: 2 }} viewport={{ amount: 0.8 }} >I Code in</motion.h1>
       <div className='SkillInner'>
         {Skills.map(skill => (
