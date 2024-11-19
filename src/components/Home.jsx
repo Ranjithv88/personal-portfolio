@@ -10,7 +10,7 @@ import { STAnimation } from './Details.jsx'
 
 function Home() {
   const redirect = () => {
-    window.open('https://drive.google.com/file/d/1EcfoYw2yfLSM3ci7uAP0EghkZAW_mgpF/view?usp=sharing', '_blank')
+    window.open('https://drive.google.com/file/d/11zZM1q5smV6EZCIHSYHEYxLjOx2tBwSu/view?usp=sharing', '_blank')
   }
   return (
     <header className="home scroll">
