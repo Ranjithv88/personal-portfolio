@@ -56,9 +56,9 @@ function Skill() {
       <motion.h1 className='SkillTitle' variants={STAnimation} initial='hidden' whileInView='visible' transition={{ duration: 2 }} viewport={{ amount: 0.8 }}>
         IDE and Tools I Use
       </motion.h1>
-      <div className='SkillInner Ide'>
+      <div className='SkillInner'>
         {ide.map(ide => (
-          <motion.div className='Skill' key={ide.key} layoutId={ide.key} onClick={() => setSelectedKey(ide.key)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 2 } }} viewport={{ amount: 0 }}>
+          <motion.div className='Skill Ide' key={ide.key} layoutId={ide.key} onClick={() => setSelectedKey(ide.key)} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 2 } }} viewport={{ amount: 0 }}>
             <motion.img src={ide.image} alt={`${ide.name} Logo`} />
             <motion.h1>{ide.name}</motion.h1>
             <motion.p>{ide.description}</motion.p>
