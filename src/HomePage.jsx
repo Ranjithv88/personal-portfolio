@@ -4,7 +4,6 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Project from './components/Project'
 import Skill from './components/Skill'
-import IDE from './components/IDE'
 import Education from './components/Education'
 import Footer from './components/Footer'
 
@@ -39,7 +38,6 @@ function HomePage() {
         <Home />
         <Project />
         <Skill />
-        <IDE />
         <Education />
         <Footer />
     </div>

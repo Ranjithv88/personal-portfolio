@@ -119,6 +119,21 @@
                 filter:  grayscale(0) brightness(80%)  drop-shadow(0px 0px 20px rgba(10, 53, 145, 0.8));
             }
         }
+        .Ide:nth-child(3):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(10, 53, 145, 0.8));
+            }
+        }
+        .Ide:nth-child(5):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(39, 39, 42, 1));
+            }
+        }
+        .Ide:nth-child(6):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(255, 255, 255, 0.8));
+            }
+        }
     }
 }
 

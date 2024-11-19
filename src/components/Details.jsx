@@ -16,6 +16,7 @@ import img14 from '../assets/icons/VS-Code-Logo.png'
 import img15 from '../assets/icons/Intelj-idea-Logo.png'
 import img16 from '../assets/icons/MySql-WorkBench-Logo.png'
 import img17 from '../assets/icons/CodePen-Logo.png'
+import img18 from '../assets/img/Web-Animaton-intro.png'
 
 export const STAnimation ={
     hidden: { opacity: 0, y: -10, scale: 0 },
@@ -38,6 +39,14 @@ export const Projects =[
         description:"This Site is the Dynamic Website ,React JS Use to Create Site this ia Furniture E-commerce site ,this project using front End is the React Js And no BackEnd Using ,given below the  LiveDemo.",
         live:"https://furniture-templates.vercel.app/",
         githubRepository:"https://github.com/Ranjithv88/Furniture--Templates"
+    },
+    {
+        key: 3,
+        image: img18,
+        name: "Web Animaton",
+        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, This E-commerce Website buying product idea for homePage demo, given below the LiveDemo.",
+        live:" https://ranjithv88.github.io/Web-Animation/",
+        githubRepository:"https://github.com/Ranjithv88/Web-Animation"
     }
 ]
 
@@ -143,35 +152,37 @@ export const Course = [
     }
 ]
 
-export const ide = [{
-    key: 1,
-    image:img14,
-    name: "Visual Studio Code",
-    description:"Visual Studio Code is a lightweight and powerful source code editor developed by Microsoft. It offers built-in support for JavaScript, TypeScript, CSS, HTML, Python, and more, making it a popular choice for web and cloud development."
-},{
-    key: 2,
-    image:img15,
-    name: "IntelliJ IDEA",
-    description:"IntelliJ IDEA is a Java IDE developed by JetBrains, the creators of the IntelliJ family of products. It offers a wide range of features, including built-in support for Java, JavaScript, and TypeScript, as well as support for other programming languages."
-},{
-    key: 3,
-    image:img16,
-    name: "MySql WorkBench",
-    description:"MySQL Workbench is a visual database design tool that integrates SQL development, administration, database design, creation and maintenance into a single integrated development environment for the MySQL database system. It is the successor to DBDesigner 4 from fabFORCE.net, and replaces the previous package of software, MySQL GUI Tools Bundle."
-},{
-    key: 4,
-    image:img2,
-    name: "MongoDB Compass",
-    description:"MongoDB Compass is a graphical user interface (GUI) for MongoDB, allowing users to visualize and interact with their data in a simple and intuitive way. It provides a comprehensive set of features, including data modeling, querying, and indexing."
-},{
-    key: 5,
-    image:img6,
-    name: "GitHub",
-    description:"GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project."
-},{
-    key: 7,
-    image:img17,
-    name: "CodePen",
-    description:"CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor and open-source learning environment, where developers can create code snippets, called pens and test them."
-}]
+    export const ide = [
+    {
+        key: 13,
+        image:img14,
+        name: "Visual Studio Code",
+        description:"Visual Studio Code is a lightweight and powerful source code editor developed by Microsoft. It offers built-in support for JavaScript, TypeScript, CSS, HTML, Python, and more, making it a popular choice for web and cloud development."
+    },{
+        key: 14,
+        image:img15,
+        name: "IntelliJ IDEA",
+        description:"IntelliJ IDEA is a Java IDE developed by JetBrains, the creators of the IntelliJ family of products. It offers a wide range of features, including built-in support for Java, JavaScript, and TypeScript, as well as support for other programming languages."
+    },{
+        key: 15,
+        image:img16,
+        name: "MySql WorkBench",
+        description:"MySQL Workbench is a visual database design tool that integrates SQL development, administration, database design, creation and maintenance into a single integrated development environment for the MySQL database system. It is the successor to DBDesigner 4 from fabFORCE.net, and replaces the previous package of software, MySQL GUI Tools Bundle."
+    },{
+        key: 16,
+        image:img2,
+        name: "MongoDB Compass",
+        description:"MongoDB Compass is a graphical user interface (GUI) for MongoDB, allowing users to visualize and interact with their data in a simple and intuitive way. It provides a comprehensive set of features, including data modeling, querying, and indexing."
+    },{
+        key: 17,
+        image:img6,
+        name: "GitHub",
+        description:"GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project."
+    },{
+        key: 18,
+        image:img17,
+        name: "CodePen",
+        description:"CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor and open-source learning environment, where developers can create code snippets, called pens and test them."
+    }
+]
 
