@@ -1,8 +1,11 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- Project Components --------------------*/
 .Project{
-    background-color: rgba(26, 27, 32, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--BG_COLOR);
+    color: var(--text_COLOR);
     .Empty{
         height: 12.5vh;
         width: 100vw;
@@ -81,8 +84,8 @@
 /*--------------------------- phone Project Components --------------------*/
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .Project{
-        background-color: rgba(26, 27, 32, 1);
-        color: rgba(255, 255, 255, 1);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         .Empty{
             height: 15vh;
             width: 100vw;

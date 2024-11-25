@@ -1,8 +1,12 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- Footer Components --------------------*/
 footer{
     width: 100vw;
-    background-color: white;
+    background-color: var(--text_COLOR);
+    color: var(--BG_COLOR);
     padding: 40px 0px;
     mask: url('../../assets/img/About-Brush-Mask-Image.png') no-repeat top / 100% 100%;
     .Empty{
@@ -50,6 +54,7 @@ footer{
                 justify-content: end;
                 align-items: center;
                 a{
+                    color: var(--BG_COLOR);
                     font-size: 25px;
                     padding: 5px;
                 }
@@ -66,7 +71,8 @@ footer{
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     footer{
         width: 100vw;
-        background-color: white;
+        background-color: var(--text_COLOR);
+        color: var(--BG_COLOR);
         padding: 20px 0px;
         mask: url('../../assets/img/About-Brush-Mask-Image.png') no-repeat top / 100% 100%;
         .Empty{

@@ -1,10 +1,24 @@
-import { React, useContext } from 'react'
+import { React, useContext, useState } from 'react'
 import './style/NavBar.scss'
 import { Scroll } from '../HomePage'
 import { motion } from 'framer-motion'
+import { FaSun } from "react-icons/fa6"
+import { MdNightlight } from "react-icons/md"
 
 function NavBar() {
     const scrollContext = useContext(Scroll)
+    const [themeColorContation,setThemeColorcontation] = useState(true)
+    const theme = () =>{
+        if(themeColorContation){
+            setThemeColorcontation(false)
+            document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
+            document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
+        } else {
+            setThemeColorcontation(true)
+            document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)')
+            document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
+        }
+    }
   return (
     <header>
         <nav>
@@ -13,6 +27,7 @@ function NavBar() {
             </div>
             <div className='menu'>
                 <motion.ul className='menuList' initial={{y: -10}} whileInView={{y: 0}} transition={{ duration: 1 }} viewport={{ amount: 0 }} >
+                    <li onClick={theme}>{themeColorContation?<MdNightlight/>:<FaSun/>}</li>
                     <li onClick={() => {scrollContext.setValue(0);scrollContext.setCon(90000)}}>Home</li>
                     <li onClick={() => {scrollContext.setValue(1);scrollContext.setCon(90000)}}>Project</li>
                     <li onClick={() => {scrollContext.setValue(2);scrollContext.setCon(90000)}}>Skills</li>

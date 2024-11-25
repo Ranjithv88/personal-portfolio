@@ -1,0 +1,15 @@
+
+/*------------- Color Variables -------------*/
+:root {
+    --BG_COLOR: rgba(255, 255, 255, 1);
+    --text_COLOR: rgba(26, 27, 32, 1);
+}
+  
+/*------------- Color Theme(dark) -------------*/
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --BG_COLOR: rgba(26, 27, 32, 1);
+      --text_COLOR: rgba(255, 255, 255, 1);
+    }
+}
+

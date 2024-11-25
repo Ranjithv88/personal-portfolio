@@ -1,4 +1,7 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- Home Components --------------------*/
 header{
     .intro::before{
@@ -17,24 +20,25 @@ header{
     .intro{
         height: 100vh;
         width: 100vw;
-        background-color: rgba(26, 27, 32, 1);
-        color: rgba(255, 255, 255, 1);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         .HContact{
             height: 100vh;
             width: 4vw;
             position: absolute;
-            background-color: rgba(26, 27, 32, 1);
+            background-color: var(--BG_COLOR);
+            color: var(--text_COLOR);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: end;
             div{
                 height: 12vh;
-                border: 1px solid rgba(255, 255, 255, 1);
+                border: 1px solid var(--text_COLOR);
                 padding-bottom: 10px;
             }
             a{
-                color: rgba(255, 255, 255, 1);
+                color: var(--text_COLOR);
                 font-size: 20px;
                 padding: 4px 0px;
                 transition: 1;
@@ -58,7 +62,7 @@ header{
                 color: rgba(196, 140, 103, 1);
             }
             span{
-            color: rgb(255, 255, 255);
+                color: var(--text_COLOR);
             }
             .main{
                padding-left: 28px;
@@ -120,13 +124,14 @@ header{
         .intro{
             height: 100vh;
             width: 100vw;
-            background-color: rgba(26, 27, 32, 1);
-            color: rgba(255, 255, 255, 1);
+            background-color: var(--BG_COLOR);
+            color: var(--text_COLOR);
             .HContact{
+                background-color: var(--BG_COLOR);
+                color: var(--text_COLOR);
                 height: 100vh;
                 width: 6vw;
                 position: absolute;
-                background-color: rgba(26, 27, 32, 1);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -135,11 +140,11 @@ header{
                 left: 0;
                 div{
                     height: 12vh;
-                    border: 1px solid rgba(255, 255, 255, 1);
+                    border: 1px solid var(--text_COLOR);
                     padding-bottom: 10px;
                 }
                 a{
-                    color: rgba(255, 255, 255, 1);
+                    color: var(--text_COLOR);
                     font-size: 16px;
                     padding: 4px 0px;
                     transition: 1;
@@ -165,7 +170,7 @@ header{
                     color: rgba(196, 140, 103, 1);
                 }
                 span{
-                color: rgb(255, 255, 255);
+                    color: var(--text_COLOR);
                 }
                 .color{
                     color: rgba(83, 163, 239, 1);

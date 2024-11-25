@@ -1,9 +1,12 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- Education Components --------------------*/
 .Education{
     width: 100vw;
-    background-color: rgb(26, 27, 32);
-    color: rgb(255, 255, 255);
+    background-color: var(--BG_COLOR);
+    color: var(--text_COLOR);
     display: grid;
     row-gap: 20px;
     justify-items: center;
@@ -21,8 +24,8 @@
     .EducationDetails{
         mask: url('../../assets/img/Education-Brush-Mask-Image.png') no-repeat center / cover;
         width: 90vw;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
+        background-color: var(--text_COLOR);
+        color: var(--BG_COLOR);
         padding: 10px 0px;
         text-align: center;
         display: grid;
@@ -45,8 +48,8 @@
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .Education{
         width: 100vw;
-        background-color: rgb(26, 27, 32);
-        color: rgb(255, 255, 255);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         display: grid;
         row-gap: 2vh;
         justify-items: center;
@@ -65,7 +68,7 @@
         .EducationDetails{
             mask: none;
             width: 98vw;
-            color: rgba(255, 255, 255, 1);
+            color: var(--text_COLOR);
             background-color: transparent;
             padding: 10px 0px;
             text-align: center;

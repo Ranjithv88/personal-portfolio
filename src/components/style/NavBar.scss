@@ -1,9 +1,12 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- NavBar Components --------------------*/
 header{
     nav{
-        color: rgb(255, 255, 255);
-        background-color: rgb(26, 27, 32);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         display: flex;
         align-items: center;
         justify-content: space-between;

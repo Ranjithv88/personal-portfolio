@@ -1,4 +1,8 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './components/style/Theme.scss';
+
+
 /*------------- All Elements -------------*/
 * {
     margin: 0;
@@ -30,13 +34,13 @@
 
 /*------------- App Elements -------------*/
 .App{
-    background-color: rgba(26, 27, 32, 1);
+    background-color: var(--BG_COLOR);
     .circle{
         --circle-size: 40px;
         position: fixed;
         height: var(--circle-size);
         width: var(--circle-size);
-        border: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid var(--text_COLOR);
         border-radius: 100%;
         top: calc(var(--circle-size)/2*-1);
         left: calc(var(--circle-size)/2*-1);

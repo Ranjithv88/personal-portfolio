@@ -1,9 +1,22 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
+/*------------- Color Theme(dark) -------------*/
+:root {
+    --preview: rgba(255, 255, 255, 1);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+      --preview: rgba(236, 240, 243, 1);
+    }
+}
+
 /*--------------------------- Skills Components --------------------*/
 .Skills{
     width: 100vw;
-    background-color: rgb(26, 27, 32);
-    color: rgb(255, 255, 255);
+    background-color: var(--BG_COLOR);
+    color: var(--text_COLOR);
     .Empty{
         height: 15vh;
         width: 100vw;
@@ -19,6 +32,8 @@
         column-gap: 20px;
         row-gap: 28px;
         .Skill{
+            background-color: rgba(26, 27, 32, 1);
+            color: rgba(255, 255, 255, 1);
             display: grid;
             text-align: justify;
             align-items: center;
@@ -44,11 +59,12 @@
             }
         }
         .SelectedSkill{
+            z-index: 2;
             position: absolute;
             left: 25%;
             height: 46vh;
             width: 50vw;
-            background-color: rgba(236, 240, 243, 1);
+            background-color: var(--preview);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -119,6 +135,27 @@
                 filter:  grayscale(0) brightness(80%)  drop-shadow(0px 0px 20px rgba(10, 53, 145, 0.8));
             }
         }
+        .Ide:nth-child(3):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(10, 53, 145, 0.8));
+            }
+        }
+        .Ide:nth-child(5):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(39, 39, 42, 1));
+            }
+        }
+        .Ide:nth-child(6):hover{
+            img{
+                filter:  grayscale(0) brightness(80%)  drop-shadow(10px 10px 1px rgba(255, 255, 255, 0.8));
+            }
+        }
+        .Ide:hover{
+            border: 2px solid rgba(192, 192, 192, 0.8);
+            img{
+                filter: grayscale(0) brightness(80%) drop-shadow(10px 10px 1px rgba(255, 217, 0, 0.8));
+            }
+        }
     }
 }
 
@@ -126,8 +163,8 @@
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .Skills{
         width: 100vw;
-        background-color: rgb(26, 27, 32);
-        color: rgb(255, 255, 255);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         .Empty{
             height: 15vh;
             width: 100vw;
@@ -172,14 +209,55 @@
                     filter: none;
                 }
             }
+            .Skill:nth-child(1):hover{
+                img{
+                    filter:  none;
+                }
+            }
+            .Skill:nth-child(12):hover{
+                img{
+                    filter:  none;
+                }
+            }
+            .Skill:nth-child(2):hover,:nth-child(11):hover{
+                img{
+                    filter:  none;
+                }
+            }
+            .Ide{
+                img{
+                    filter: grayscale(100%) brightness(100%);
+                }
+            }
+            .Ide:nth-child(3):hover{
+                img{
+                    filter:  none;
+                }
+            }
+            .Ide:nth-child(5):hover{
+                img{
+                    filter: none;
+                }
+            }
+            .Ide:nth-child(6):hover{
+                img{
+                    filter: none;
+                }
+            }
+            .Ide:hover{
+                img{
+                    filter: none;
+                }
+            }
             .SelectedSkill{
+                z-index: 2;
                 overflow-y: hidden;
                 position: absolute;
                 left: 0;
                 height: 76vh;
                 width: 90vw;
                 margin: 0 5vw;
-                background-color: rgba(236, 240, 243, 1);
+                background-color: var(--preview);
                 display: grid;
                 align-items: center;
                 justify-content: space-between;
@@ -192,7 +270,7 @@
                 cursor: default;
                 .SelectedSkill01{
                     height: 20vh;
-                    width: 88vw;
+                    width: 85vw;
                     display: grid;
                     align-items: center;
                     justify-content: center;
@@ -206,7 +284,7 @@
                     }
                 }
                 .SelectedSkill02{
-                    width: 88vw;
+                    width: 85vw;
                     height: 40vh;
                     text-align: justify;
                     display: grid;
@@ -218,7 +296,7 @@
                 }
                 .SelectedSkill03{
                     height: 10vh;
-                    width: 88vw;
+                    width: 85vw;
                     display: flex;
                     align-items: center;
                     justify-content: center;

@@ -1,14 +1,16 @@
+/*--------------------------- Import Theme.scss --------------------*/
+@import './components/style/Theme.scss';
 
 /*--------------------------- ScrollBar Design --------------------*/
 ::-webkit-scrollbar{
     width: 12px;
 }
 ::-webkit-scrollbar-track {
-    background: rgba(26, 27, 32, 1);
+    background-color: var(--BG_COLOR);
  }
  ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 1);
+    background: var(--text_COLOR);
     border-radius: 20px;
-    border: 1.5px solid rgba(26, 27, 32, 1);
+    border: 1.5px solid var(--BG_COLOR);
  }
 
