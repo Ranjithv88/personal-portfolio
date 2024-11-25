@@ -16,7 +16,7 @@ import img14 from '../assets/icons/VS-Code-Logo.png'
 import img15 from '../assets/icons/IntelJ-idea-Logo.png'
 import img16 from '../assets/icons/MySql-WorkBench-Logo.png'
 import img17 from '../assets/icons/CodePen-Logo.png'
-import img18 from '../assets/img/Web-Animaton-intro.png'
+import img18 from '../assets/img/Web-Animation-Intro.png'
 
 export const STAnimation ={
     hidden: { opacity: 0, y: -10, scale: 0 },
@@ -43,7 +43,7 @@ export const Projects =[
     {
         key: 3,
         image: img18,
-        name: "Web Animaton",
+        name: "Web Animation",
         description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, This E-commerce Website buying product idea for homePage demo, given below the LiveDemo.",
         live:" https://ranjithv88.github.io/Web-Animation/",
         githubRepository:"https://github.com/Ranjithv88/Web-Animation"
