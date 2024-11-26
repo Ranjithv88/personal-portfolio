@@ -7,14 +7,14 @@ import { MdNightlight } from "react-icons/md"
 
 function NavBar() {
     const scrollContext = useContext(Scroll)
-    const [themeColorContation,setThemeColorcontation] = useState(true)
+    const [themeColorConditional,setThemeColorConditional] = useState(true)
     const theme = () =>{
-        if(themeColorContation){
-            setThemeColorcontation(false)
+        if(themeColorConditional){
+            setThemeColorConditional(false)
             document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
             document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
         } else {
-            setThemeColorcontation(true)
+            setThemeColorConditional(true)
             document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)')
             document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
         }
@@ -27,7 +27,7 @@ function NavBar() {
             </div>
             <div className='menu'>
                 <motion.ul className='menuList' initial={{y: -10}} whileInView={{y: 0}} transition={{ duration: 1 }} viewport={{ amount: 0 }} >
-                    <li onClick={theme}>{themeColorContation?<MdNightlight/>:<FaSun/>}</li>
+                    <li onClick={theme}>{themeColorConditional?<FaSun/>:<MdNightlight/>}</li>
                     <li onClick={() => {scrollContext.setValue(0);scrollContext.setCon(90000)}}>Home</li>
                     <li onClick={() => {scrollContext.setValue(1);scrollContext.setCon(90000)}}>Project</li>
                     <li onClick={() => {scrollContext.setValue(2);scrollContext.setCon(90000)}}>Skills</li>
