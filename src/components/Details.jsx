@@ -1,6 +1,6 @@
-import img from "../assets/icons/Java-Logo.png"
-import img1 from "../assets/icons/MySQL-Logo.png"
-import img2 from "../assets/icons/Mongodb-Logo.png"
+import img from '../assets/icons/Java-Logo.png'
+import img1 from '../assets/icons/MySQL-Logo.png'
+import img2 from '../assets/icons/Mongodb-Logo.png'
 import img3 from '../assets/icons/Redis-Logo.png'
 import img4 from '../assets/icons/Spring-Logo.png'
 import img5 from '../assets/icons/Git-Logo.png'
@@ -17,6 +17,7 @@ import img15 from '../assets/icons/IntelJ-idea-Logo.png'
 import img16 from '../assets/icons/MySql-WorkBench-Logo.png'
 import img17 from '../assets/icons/CodePen-Logo.png'
 import img18 from '../assets/img/Web-Animation-Intro.png'
+import img19 from '../assets/img/Spline-SodaCan-Intro.png'
 
 export const STAnimation ={
     hidden: { opacity: 0, y: -10, scale: 0 },
@@ -44,9 +45,17 @@ export const Projects =[
         key: 3,
         image: img18,
         name: "Web Animation",
-        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, This E-commerce Website buying product idea for homePage demo, given below the LiveDemo.",
-        live:" https://ranjithv88.github.io/Web-Animation/",
+        description:"This is a Static Website,and using HTML,CSS And JavaScript to build Site, This Web-Animation Website, given below the LiveDemo.",
+        live:"https://ranjithv88.github.io/Web-Animation/",
         githubRepository:"https://github.com/Ranjithv88/Web-Animation"
+    },
+    {
+        key: 4,
+        image: img19,
+        name: "SodaCan Spline",
+        description:"This is a Static Website,and using HTML,CSS And  Spline 3d Model Package to build Site, this Spline #d model using this website, given below the LiveDemo.",
+        live:"https://ranjithv88.github.io/Sodacan-Spline/",
+        githubRepository:"https://github.com/Ranjithv88/Sodacan-Spline"
     }
 ]
 
