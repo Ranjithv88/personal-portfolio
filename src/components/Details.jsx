@@ -18,6 +18,8 @@ import img16 from '../assets/icons/MySql-WorkBench-Logo.png'
 import img17 from '../assets/icons/CodePen-Logo.png'
 import img18 from '../assets/img/Web-Animation-Intro.png'
 import img19 from '../assets/img/Spline-SodaCan-Intro.png'
+import img20 from '../assets/icons/Tailwind-CSS-Logo.png'
+import img21 from '../assets/icons/TS-Logo.png'
 
 export const STAnimation ={
     hidden: { opacity: 0, y: -10, scale: 0 },
@@ -98,9 +100,9 @@ export const Skills = [
     },
     {
         key: 7,
-        image:img6,
-        name: "GitHub",
-        description:"GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project."
+        image:img21,
+        name: "Type Script",
+        description:"TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript."
     },
     {
         key: 8,
@@ -131,6 +133,12 @@ export const Skills = [
         image:img11,
         name: "Sass",
         description:"Sass consists of two syntaxes. The original syntax, called 'the indented syntax,' uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, SCSS (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate rules within a block."
+    },
+    {
+        key: 13,
+        image:img20,
+        name: "Tailwind CSS",
+        description:"Tailwind CSS is an open-source CSS framework. Unlike other frameworks, like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of 'utility' CSS classes that can be used to style each element by mixing and matching."
     }
 ]
 
