@@ -1,24 +1,43 @@
-import { React, useContext, useState } from 'react'
+import { React, useContext, useState, useEffect } from 'react'
 import './style/NavBar.scss'
 import { Scroll } from '../HomePage'
 import { motion } from 'framer-motion'
 import { FaSun } from "react-icons/fa6"
+import { IoLeaf } from "react-icons/io5"
+import { FaCloud } from "react-icons/fa"
 import { MdNightlight } from "react-icons/md"
 
 function NavBar() {
     const scrollContext = useContext(Scroll)
-    const [themeColorConditional,setThemeColorConditional] = useState(true)
+    const [themeColorConditional,setThemeColorConditional] = useState(<FaSun/>)
+    const [number, setNumber] = useState(1);
+    var bg ;
+    var  text;
+    useEffect(()=>{
+        theme()
+    },[number])
     const theme = () =>{
-        if(themeColorConditional){
-            setThemeColorConditional(false)
-            document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
-            document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
-        } else {
-            setThemeColorConditional(true)
-            document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)')
-            document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
+        if(number === 1){
+            bg = 'rgba(255, 255, 255, 1)'
+            text = 'rgba(26, 27, 32, 1)'
+            setThemeColorConditional(<FaSun/>)
+        } else if(number === 2){
+            bg = 'rgba(248, 233, 214, 1)'
+            text = 'rgb(20, 115, 95)'
+            setThemeColorConditional(<IoLeaf/>)
+        }else if(number === 3){
+            bg = 'rgba(255, 255, 255, 1)'
+            text = 'rgba(138, 170, 229, 1)'
+            setThemeColorConditional(<FaCloud/>)
+        }else {
+            bg = 'rgba(26, 27, 32, 1)'
+            text = 'rgba(255, 255, 255, 1)'
+            setThemeColorConditional(<MdNightlight/>)
         }
+        document.documentElement.style.setProperty('--BG_COLOR', bg)
+        document.documentElement.style.setProperty('--text_COLOR', text)
     }
+
   return (
     <header>
         <nav>
@@ -27,7 +46,7 @@ function NavBar() {
             </div>
             <div className='menu'>
                 <motion.ul className='menuList' initial={{y: -10}} whileInView={{y: 0}} transition={{ duration: 1 }} viewport={{ amount: 0 }} >
-                    <li onClick={theme}>{themeColorConditional?<FaSun/>:<MdNightlight/>}</li>
+                    <li  onClick={() => setNumber(prevValue => prevValue < 4 ? prevValue + 1 : 1)}>{themeColorConditional}</li>
                     <li onClick={() => {scrollContext.setValue(0);scrollContext.setCon(90000)}}>Home</li>
                     <li onClick={() => {scrollContext.setValue(1);scrollContext.setCon(90000)}}>Project</li>
                     <li onClick={() => {scrollContext.setValue(2);scrollContext.setCon(90000)}}>Skills</li>
