@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/Home.scss'
 import TypingText from './TypingText'
 import { IoIosArrowUp,IoIosArrowDown } from "react-icons/io"
@@ -7,8 +7,37 @@ import { RiInstagramFill } from "react-icons/ri"
 import { MdMailOutline } from "react-icons/md"
 import { motion } from 'framer-motion'
 import { STAnimation } from './Details.jsx'
+import moon from '../assets/img/moon.png'
 
 function Home() {
+  const [theme, setTheme] = useState(false)
+  const sleep = (ms) => {return new Promise(resolve => setTimeout(resolve, ms))}
+  const toggleTheme = async() => {
+    let themeDiv = document.querySelector('.theme')
+    if(theme){
+      console.log('true')
+      themeDiv.classList.add('anime')
+      await sleep(2000)
+      themeDiv.style.backgroundImage = 'none'
+      document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 223, 0, 1)')
+      document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
+      document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
+      await sleep(3000)
+      themeDiv.classList.remove('anime')
+      console.log('remove')
+    }else {
+      console.log('false')
+      themeDiv.classList.add('anime')
+      await sleep(2000)
+      themeDiv.style.backgroundImage = `url('${moon}')`
+      document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 255, 255, 1)')
+      document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)') 
+      document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
+      await sleep(3000)
+      themeDiv.classList.remove('anime')
+      console.log('remove')
+    }
+  }
   const redirect = () => {
     window.open('https://drive.google.com/file/d/1Rf49YvQ2XZgp7goeW5VEVIfDMTs55C1G/view', '_blank')
   }
@@ -39,6 +68,8 @@ function Home() {
               <h1 className='java main'><span className='color01'>{` }`}</span></h1>
               <h1 className='java'><span className='color01'>{` }`}</span></h1>
             </motion.div>
+            <h4 className='messageTitle'>click here</h4>
+            <div className='theme' onClick={()=>{setTheme(!theme), toggleTheme()}}/>
         </div>
     </header>
   )

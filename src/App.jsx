@@ -2,7 +2,14 @@ import React, { Suspense, useEffect, useRef } from 'react'
 import './App.scss'
 import Loading from './components/Loading'
 
-const HomePage = React.lazy(() => import('./HomePage'))
+const HomePage = React.lazy(() => DelayForLoading(import('./HomePage')))
+
+async function DelayForLoading(promise) {
+  await new Promise(resolve => {
+    setTimeout(resolve, 5000)
+  })
+  return promise
+}
 
 function App() {
  var mouse = { x: 0, y: 0 }

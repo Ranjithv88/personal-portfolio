@@ -10,6 +10,7 @@ header{
         width: 40vh;
         background-color: rgba(255, 255, 255, 1);
         position: absolute;
+        border-radius: 100%;
         top: 12%;
         left: 80%;
         transform: translate(-20%);
@@ -102,6 +103,39 @@ header{
                 }
             }
         }
+    }
+    .messageTitle{
+        border-radius: 4px;
+        font-family: cursive;
+        font-size: 12px;
+        padding: 4px;
+        position: absolute;
+        top: 9.5%;
+        left: 87.1%;
+        transform: translate(-12.9%);
+        background-color: var(--text_COLOR);
+        color: var(--BG_COLOR);
+        z-index: 20;
+        animation: messageAnimation 10s ease-in-out 2s infinite;
+    }
+    .theme{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150% 140%;
+        height: 20vh;
+        width: 20vh;
+        background-color: var(--TH_COLOR);
+        position: absolute;
+        top: 15%;
+        left: 86%;
+        transform: translate(-14%);
+        filter: opacity(0.5);
+        z-index: 20;
+        border-radius: 100%;
+        box-shadow: 5px 5px 800px var(--TH_COLOR),
+            -5px -5px 800px var(--TH_COLOR);
+        cursor: pointer;
+        transition: 2s;
     }
 }
 
@@ -204,5 +238,40 @@ header{
             }
         }
     }    
+}
+
+/*--------------------------- Animation --------------------*/
+.anime{
+    animation: themeAnimation 4.5s ease-in-out 0s 1;
+}
+@keyframes themeAnimation {
+    0% {
+        top: 15%;
+        scale: 1;
+        rotate: 0deg;
+    }50% {
+        top: 120%;
+        scale: 0;
+        rotate: 360deg;
+    }100% {
+        top: 15%;
+        scale: 1;
+        rotate: -0deg;
+    }
+}
+@keyframes messageAnimation {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }25% {
+        opacity: 1;
+        scale: 1;
+    }75% {
+        opacity: 1;
+        scale: 1;
+    }100% {
+        opacity: 0;
+        scale: 0;
+    }
 }
 

@@ -23,6 +23,7 @@ header{
                 font-family: "Kablammo", sans-serif;
                 text-align: center;
                 cursor: default;
+                z-index: 22;
             }
         }
         .menu{
@@ -33,9 +34,12 @@ header{
                 li{
                     cursor: pointer;
                     z-index: 22;
+                    padding: 4px;
                 }
-                .ListMenu{
-                    display: none;
+                li:hover {
+                    border-radius: 14px;
+                    background-color: var(--text_COLOR);
+                    color: var(--BG_COLOR);
                 }
             }
         }
