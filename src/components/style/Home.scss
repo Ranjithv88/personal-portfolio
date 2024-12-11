@@ -116,7 +116,7 @@ header{
         background-color: var(--text_COLOR);
         color: var(--BG_COLOR);
         z-index: 20;
-        animation: messageAnimation 10s ease-in-out 2s infinite;
+        animation: messageAnimation 15s ease-in-out 0s infinite;
     }
     .theme{
         background-position: center;
@@ -236,6 +236,39 @@ header{
                     }
                 }
             }
+        }
+        .messageTitle{
+            border-radius: 2px;
+            font-family: cursive;
+            font-size: 10px;
+            padding: 1px;
+            position: absolute;
+            top: 12%;
+            left: 84.6%;
+            transform: translate(-16.4%);
+            background-color: var(--text_COLOR);
+            color: var(--BG_COLOR);
+            z-index: 20;
+            animation: messageAnimation 15s ease-in-out 0s infinite;
+        }
+        .theme{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 150% 140%;
+            height: 10vh;
+            width: 10vh;
+            background-color: var(--TH_COLOR);
+            position: absolute;
+            top: 15%;
+            left: 86%;
+            transform: translate(-14%);
+            filter: opacity(0.5);
+            z-index: 20;
+            border-radius: 100%;
+            box-shadow: 5px 5px 800px var(--TH_COLOR),
+                -5px -5px 800px var(--TH_COLOR);
+            cursor: pointer;
+            transition: 2s;
         }
     }    
 }
