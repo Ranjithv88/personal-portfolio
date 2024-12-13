@@ -7,7 +7,6 @@ import { RiInstagramFill } from "react-icons/ri"
 import { MdMailOutline } from "react-icons/md"
 import { motion } from 'framer-motion'
 import { STAnimation } from './Details.jsx'
-import moon from '../assets/img/moon.png'
 
 function Home() {
   const [theme, setTheme] = useState(false)
@@ -18,7 +17,6 @@ function Home() {
       console.log('true')
       themeDiv.classList.add('anime')
       await sleep(2000)
-      themeDiv.style.backgroundImage = 'none'
       document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 223, 0, 1)')
       document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
       document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
@@ -29,7 +27,6 @@ function Home() {
       console.log('false')
       themeDiv.classList.add('anime')
       await sleep(2000)
-      themeDiv.style.backgroundImage = `url('${moon}')`
       document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 255, 255, 1)')
       document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)') 
       document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
@@ -68,8 +65,9 @@ function Home() {
               <h1 className='java main'><span className='color01'>{` }`}</span></h1>
               <h1 className='java'><span className='color01'>{` }`}</span></h1>
             </motion.div>
-            <h4 className='messageTitle'>click here</h4>
-            <div className='theme' onClick={()=>{setTheme(!theme), toggleTheme()}}/>
+            <div className='theme' onClick={()=>{setTheme(!theme), toggleTheme()}}>
+              <h4 className='messageTitle'>click here</h4>
+            </div>
         </div>
     </header>
   )
