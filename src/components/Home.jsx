@@ -7,6 +7,8 @@ import { RiInstagramFill } from "react-icons/ri"
 import { MdMailOutline } from "react-icons/md"
 import { motion } from 'framer-motion'
 import { STAnimation } from './Details.jsx'
+import sun from '../assets/img/Sun_Image.png'
+import moon from '../assets/img/Moon_Image.png'
 
 function Home() {
   const [theme, setTheme] = useState(false)
@@ -14,9 +16,10 @@ function Home() {
   const toggleTheme = async() => {
     let themeDiv = document.querySelector('.theme')
     if(theme){
-      console.log('true')
       themeDiv.classList.add('anime')
       await sleep(2000)
+      themeDiv.style.maskImage = `url(${sun})`
+      themeDiv.style.maskSize = 'cover'
       document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 223, 0, 1)')
       document.documentElement.style.setProperty('--BG_COLOR', 'rgba(255, 255, 255, 1)')
       document.documentElement.style.setProperty('--text_COLOR', 'rgba(26, 27, 32, 1)')
@@ -24,9 +27,10 @@ function Home() {
       themeDiv.classList.remove('anime')
       console.log('remove')
     }else {
-      console.log('false')
       themeDiv.classList.add('anime')
       await sleep(2000)
+      themeDiv.style.maskImage = `url(${moon})`
+      themeDiv.style.maskSize = '150%'
       document.documentElement.style.setProperty('--TH_COLOR', 'rgba(255, 255, 255, 1)')
       document.documentElement.style.setProperty('--BG_COLOR', 'rgba(26, 27, 32, 1)') 
       document.documentElement.style.setProperty('--text_COLOR', 'rgba(255, 255, 255, 1)')
